@@ -1,0 +1,40 @@
+.pro12-container-splash{
+    padding-top: 70px;
+    padding-bottom: 65px;
+    background-color:#F7F7F7;
+}
+.splash{
+    background-color: #F7F7F7;
+}
+.submit-tick{
+    width: 940px;
+    height: 279px;
+    display: flex;
+    justify-content: center;
+}
+.exploreshareinfo{
+    width: 277px;
+    height: 49px;
+    border-radius: 30px;
+    padding: 15px 80px 15px 80px;
+    border: none;
+    background-color: #414ECA;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+#submitGif{
+    width: 400px;
+    height: 279px;
+    background-color: white;
+}
+.splashsubmit-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px
+    ;
+}
+
+/*--------------------------Animation----------------*/

@@ -1,0 +1,50 @@
+.stepper-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .stepper-steps {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stepper-step-container {
+    text-align: center;
+  }
+  
+  .stepper-step {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .stepper-step.active {
+    border-color: #3498db;
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .stepper-step-label {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .stepper-progress {
+    height: 2px;
+    background-color: #ccc;
+    width: 100%;
+  }
+  
+  .stepper-progress.active {
+    background-color: #3498db;
+  }

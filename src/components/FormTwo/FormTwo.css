@@ -1,0 +1,127 @@
+.f2-main{
+    width: 790px;
+    height: 446px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.expertise-domain{
+    width: 790px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.expertise-dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.expertise-dropdown label{
+    color: #414ECA;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+#f2-dropdown{
+    width: 330px;
+    height: 49px;
+    border-radius: 12px;
+    padding: 15px 20px 15px 20px;
+    background: #FFF;
+    border-radius: 12px;
+    /* Effect Common Dark */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.dropdown-list{
+    font-size: 18px;
+}
+#dropdown-placeholder{
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: rgba(82, 81, 78, 0.50);  
+}
+
+.domain-container{
+    width: 790px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.domain-item{
+    box-shadow: 0px 0px 4px 0px #414ECA inset;
+    width: 154px;
+    height: 25px;
+    border-radius: 7px;
+    padding: 15px 20px 15px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #414ECA;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.expertise-software-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.expertise-software{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.expertise-software label{
+    color: #414ECA;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.software-icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 790px;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.software-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.software-icons img{
+    width: 50px;
+}
+#software-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+#continue-btn{
+    width: 219px;
+    height: 49px;
+    border-radius: 30px;
+    padding: 15px 80px 15px 80px;
+    border: none;
+    background-color: #414ECA;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 700;
+}

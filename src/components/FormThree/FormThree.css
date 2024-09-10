@@ -1,0 +1,184 @@
+.f3-main{
+    margin-top: 100px;
+    width: 940px;
+    height: 350px;
+}
+.f3-name-field{
+    width: 940px;
+    height: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.f3-name{
+    width: 940px;
+    height: 76px;
+    display: flex;
+    gap: 20px;
+}
+.f3-name-input{
+    display: flex;
+    flex-direction: column;
+}
+.f3-name-input label{
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #414ECA;
+}
+.f3-name-input input{
+    padding: 15px 20px;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    background: #FFF;
+    border-radius: 12px;
+    /* Effect Common Dark */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border: none;
+}
+.f3-input-field-container{
+    width: 711px;
+    height: 76px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.workDuration-container{
+    display: flex;
+    flex-direction: column;
+}
+.workDuration-container label{
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #414ECA;
+}
+.workDuration-container input{
+    padding: 15px 20px;
+    align-items: center;
+    gap: 10px;
+    width: 181px;
+    background: #FFF;
+    border-radius: 12px;
+    /* Effect Common Dark */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border: none;
+
+}
+.checkbox-container{
+    display: flex;
+    align-items:end;
+    /* gap: 5px; */
+    text-align: center;
+    margin-top: 25px;
+}
+.checkbox-container label{
+
+    font-family: Nunito;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #52514E80;
+}
+#checkbox{
+    width: 21px;
+    height: 21px;
+    align-items: center;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    /* Effect Common Dark */
+    /* box-shadow: 0px 0px 4px 0px rgba(99, 94, 94, 0.25) ;   */
+}
+.addMore-btn{
+    display: flex;
+    margin-top: 20px;
+}
+.addMore-btn button{
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: #CECBC2;
+    width: 145px;
+    height: 49px;
+    border-radius: 10px;
+    padding: 15px 40px 15px 40px;
+    border: none;
+    color: #8B8B8B;
+}
+
+.career-card{
+    display: flex;
+    gap: 10px   ;
+}
+.career-imgage{
+    width: 50px;
+    height: 50px;
+    padding: 3px 5px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10) inset;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#career-img{
+    width: 30px;
+    height: 30px;
+}
+.career-info{
+    width: 163px;
+    height: 33px;
+}
+.career-info h1{
+    color: #260446;
+    font-size: 14px;
+    font-weight: 700;
+}
+.career-info p{
+    font-size: 10px;
+    color: #434343;
+    font-weight: 600;
+}
+#career-company-name{
+    font-weight: 700;
+}
+.career-card-container{
+    display: flex;
+    gap: 20px;
+}
+.career-journey{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.career-journey label{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #414ECA;
+}
+.career-journey button{
+    width: 288px;
+    height: 49px;
+    border-radius: 30px;
+    border: none;
+    background-color: #414ECA;
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+}

@@ -1,0 +1,145 @@
+.f12-main{
+    width: 1006px;
+    height: 836px;
+    display: flex;
+    margin-top: 20px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+.profile-infos{
+    height: 392px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.profile-pic{
+    width: 150px;
+    height: 150px;
+}
+.profile-name-container{
+    display: flex;
+    gap: 20px;
+    
+}
+.profile-name-container label{
+    color: #414ECA;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.profile-name{
+    width: 322px;
+    height: 49px;
+    border-radius: 12px;
+    padding: 15px 20px 15px 20px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #52514E80;
+}
+.profile-expertise{
+    width: 790px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.profile-expertise label{
+    color: #414ECA;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.expertise-sectors{
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.expertise-sector{
+    width: 154px;
+    height: 25px;
+    border-radius: 7px;
+    padding: 15px 20px 15px 20px;
+    background: var(--ShareInfo-White, #FFF);
+    box-shadow: 0px 0px 4px 0px #414ECA inset;
+    color: #414ECA;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.profile-software{
+    width: 790px;
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-software label{
+    color: #414ECA;
+    font-size: 16px;
+    font-weight: 600;
+}
+.profile-software-items{
+    width: 790px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.career-journey{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-career-journey{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.qualification-proof{
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    height: 87px;
+}
+.qualification-proof{
+    color: #414ECA;
+    font-size: 16px;
+    font-weight: 600;
+}
+.proof{
+    width: 478px;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 15px 20px;
+    border-radius: 12px;
+
+}
+.green-tick{
+    background-color: green;
+    border: solid 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+#changes-btn{
+    background-color: #8B8B8B;
+}
+.confirmFinal-btn-container{
+    margin-top: 30px;
+    display: flex;
+    gap: 29px;
+}
