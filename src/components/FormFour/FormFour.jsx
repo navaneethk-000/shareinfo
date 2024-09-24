@@ -16,7 +16,7 @@ function FormFour() {
           <label htmlFor="">Proof of Qualification</label>
           <input type="file" name="" id="" />
         </div>
-        <button>Confirm & Continue</button>
+        {/* <button>Confirm & Continue</button> */}
       </div>
     </div>
   )

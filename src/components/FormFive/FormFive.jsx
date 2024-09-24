@@ -132,10 +132,10 @@ function FormFive() {
                     </div>
                 </div>
             </div>
-            <div className="confirmFinal-btn-container">
+            {/* <div className="confirmFinal-btn-container">
                 <button id="changes-btn">Need Changes</button>
                 <button onClick={()=>navigate("/SplashSubmit")}>Confirm & Submit</button>
-            </div>
+            </div> */}
             </div>
 
         </div>

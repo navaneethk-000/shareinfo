@@ -1,9 +1,15 @@
-.pro7-container{
+/* .pro7-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
     
+} */
+.stepper-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .pro7-main{
     width: 1006px;

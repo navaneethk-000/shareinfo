@@ -8,14 +8,18 @@ import SignUp from './pages/SignUp/SignUp'
 import Splash from './pages/Splash/Splash'
 import { Routes, Route } from 'react-router-dom'
 import SplashSubmit from './pages/SplashSubmit/SplashSubmit'
+
+
 function App() {
+
+
   return (
     <>
       <Routes>
         <Route path='/' exact element={<Splash/>} />
         <Route path='/SignUp' element={<SignUp/>}/>
         {/* <Route path='/Otp' element={<Otp/>}/> */}
-        <Route path='/Profile7' element={<Profile7/>}/>
+        <Route path='/profile7' element={<Profile7/>}/>
         <Route path='/Profile9' element={<Profile9/>}/>
         <Route path='/Profile12'element={<Profile12/>}/>
         <Route path='/SplashSubmit'element={<SplashSubmit/>}/>
@@ -26,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

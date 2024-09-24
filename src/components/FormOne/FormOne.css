@@ -1,5 +1,9 @@
 .name-container{
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .name-field{
     display: flex;
@@ -51,6 +55,7 @@
     align-items: center;
     gap: 30px;
     margin-top: 20px;
+    
 }
 .profile-img-upload input{
     color: #414ECA;
@@ -75,10 +80,10 @@
     cursor: pointer;
 }
 
-.next-btn{  
+/* .next-btn{  
     width: 192px;
-    height: 49px;
-}
+    height: 49px;   
+} */
 .next-btn button{
     border: none;
     background: #414ECA;

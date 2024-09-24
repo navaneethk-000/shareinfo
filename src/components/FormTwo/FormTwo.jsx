@@ -77,7 +77,7 @@ function FormTwo() {
                 <p>Figma</p>
             </div>
         </div>
-        <button id="continue-btn" onClick={()=>navigate("/Profile9")}>Continue</button>
+        {/* <button id="continue-btn" onClick={()=>navigate("/Profile9")}>Continue</button> */}
         {/* Temporarily navigated to profile9 */}
       </div>
     </div>

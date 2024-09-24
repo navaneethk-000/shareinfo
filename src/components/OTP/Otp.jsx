@@ -76,12 +76,13 @@ function Otp({length = 4,onOtpSubmit = ()=>{}}) {
         </div>
         <p id='resent-otp'>Resend Code in <span>00:90</span> Seconds</p>
         <div id='validate'>
+          {/* <button onClick={()=>navigate("/DemoPg")} className="validate-btn">Validate</button> */}
           <button onClick={()=>navigate("/Profile7")} className="validate-btn">Validate</button>
           <p>Facing issue while Validation <a href="#">Connect us?</a></p>
         </div>
 
       </div>
-    </div>
+    </div>  
   )
 }
 

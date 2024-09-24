@@ -55,9 +55,9 @@ const FormOne = () => {
             />
           </div>
         </div>
-        <div className="next-btn">
+        {/* <div className="next-btn">
           <button onClick={()=>navigate("/Profile12")}>Next</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

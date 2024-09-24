@@ -4,8 +4,8 @@
     display: flex;
     margin-top: 20px;
     margin: 50px 0;
-    margin-bottom: 100px;
-}
+    margin-bottom: -40px;
+} 
 .profile-infos{
     height: 392px;
     display: flex;
