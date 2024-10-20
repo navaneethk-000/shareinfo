@@ -2,7 +2,8 @@ import { useNavigate } from "react-router-dom"
 import { splash_gif } from "../../assets/assets"
 import './Splash.css'
 
-function Splash() {
+
+export const Splash = () => {
     const navigate = useNavigate()
   return (
     <div className="splash-main">
@@ -27,5 +28,3 @@ function Splash() {
     </div>
   )
 }
-
-export default Splash

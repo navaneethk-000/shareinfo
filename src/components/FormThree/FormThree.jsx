@@ -2,11 +2,9 @@ import { useNavigate } from "react-router-dom";
 import { careerImg } from "../../assets/assets";
 import "./FormThree.css";
 
-function FormThree() {
 
+export const FormThree = () => {
   const navigate = useNavigate()
-
-
   return (
     <div className="f3-main">
       <div className="f3-name-field">
@@ -110,7 +108,5 @@ function FormThree() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-export default FormThree;

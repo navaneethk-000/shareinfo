@@ -2,11 +2,12 @@ import { useNavigate } from "react-router-dom";
 import { signUpTitle } from "../../assets/assets";
 import "./SignUp.css";
 import { useState } from "react";
-import Otp from "../../components/OTP/Otp";
-function SignUp() {
+import {Otp} from "../../components/OTP/Otp";
 
-  // const navigate = useNavigate();
-  const [showOtpInput,setShowOtpInput] = useState(false)
+
+export const SignUp = () => {
+
+    const [showOtpInput,setShowOtpInput] = useState(false)
   const [phoneNumber, setPhoneNumber] = useState("")
   const handlePhoneNumber = (event)=>{
     setPhoneNumber(event.target.value )
@@ -33,6 +34,7 @@ function SignUp() {
   }
 
   return (
+    
     <div className="login-main">
       <div className="login-title">
         <img src={signUpTitle} alt="" />
@@ -87,7 +89,5 @@ function SignUp() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-export default SignUp;

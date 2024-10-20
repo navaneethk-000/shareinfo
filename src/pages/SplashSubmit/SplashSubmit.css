@@ -36,5 +36,10 @@
     gap: 60px
     ;
 }
-
+.step-indicator h1{
+    font-size: 36px;
+}
+.step-indicator p{
+    font-size: 14px;
+}
 /*--------------------------Animation----------------*/

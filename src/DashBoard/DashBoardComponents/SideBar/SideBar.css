@@ -1,0 +1,19 @@
+.sidebar{
+   /* padding-top: 135px; */
+   height: 100dvh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+/* 
+.sidebar-items{
+    width: 24px;
+    height: 508px;
+    display: flex;
+    color: white;
+    background-color: black;
+} */
+ .sidebarContainer {
+    /* height: calc(100dvh - 65px); */
+}

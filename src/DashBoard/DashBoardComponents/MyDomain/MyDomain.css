@@ -1,0 +1,93 @@
+.my-domain-container{
+    /* margin-top: 10px; */
+    /* margin-right: 20px; */
+    height: fit-content;
+    padding: 10px;
+    background: var(--ShareInfo-Colors-Fill-BG, #141518);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.my{
+    display: flex;
+    margin-left: -13px;
+}
+.my-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.my-items{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--ShareInfo-Colors-Fill-BG, #141518);
+    box-shadow: 0px 0px 4px 0px rgba(230, 193, 0, 0.25) inset;
+    width: 130px;
+    height: 40px;
+    color: #E6C100;
+}
+.see-all{ 
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    color: #8B8B8B;
+}
+.my-cards-container{
+    display: flex;
+    justify-content: space-between;
+}
+.my-cards{
+    display: flex;
+    gap:20px;
+    padding: 7px;
+    /* width: max-content; */
+
+}
+.last-updated{
+    display: flex;
+    gap: 10px;
+    color: #52514E;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 11px;
+
+}
+.my-filter-container{
+    display: flex;
+    gap: 20px;
+}
+.filter{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--ShareInfo-Colors-Fill-BG, #141518);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+/* Adjusting width of domain items*/
+.widthadjust{
+    width: fit-content;
+}
+.card-container{
+    display: flex;
+    gap: 20px;
+    width:200px;
+    flex-direction: row;
+    /* background-color: red; */
+}
+.coursecard-main{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: var(--ShareInfo-Colors-Lighten-BG, #23262B);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 7px;
+    padding: 5px;
+}

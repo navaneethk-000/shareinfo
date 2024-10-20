@@ -1,0 +1,13 @@
+.price-container{
+    width: fit-content  ;
+}
+#course-description{
+    /* width: fit-content; */
+    width: 350px;
+}
+#courseWidth{
+    width: fit-content;
+}
+#course-number{
+    width: 120px;
+}

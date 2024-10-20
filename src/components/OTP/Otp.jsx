@@ -1,14 +1,12 @@
-// import { useState } from 'react'
+import './Otp.css'
 import { useEffect, useRef, useState } from 'react'
 import './Otp.css'
 import { useNavigate } from 'react-router-dom'
 
-function Otp({length = 4,onOtpSubmit = ()=>{}}) {
-    //Navigate to profile page aster otp validation
+export const Otp = ({length = 4,onOtpSubmit = ()=>{}}) => {
+
+  // Navigate to profile page aster otp validation
     const navigate = useNavigate()
-
-
-
     const[storeOtp, setStoreOtp] = useState(new Array(length).fill(""))
     const inputRefs = useRef([])
 
@@ -50,8 +48,6 @@ function Otp({length = 4,onOtpSubmit = ()=>{}}) {
       }
     } 
 
-    
-
   return (
     <div className='otp '>
       <div className="otp-container">
@@ -82,8 +78,6 @@ function Otp({length = 4,onOtpSubmit = ()=>{}}) {
         </div>
 
       </div>
-    </div>  
+    </div> 
   )
 }
-
-export default Otp

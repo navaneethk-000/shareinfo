@@ -1,7 +1,9 @@
 import { signUpTitle } from '../../assets/assets'
-import FormThree from '../../components/FormThree/FormThree'
+import {FormThree} from '../../components/FormThree/FormThree'
 import './Profile9.css'
-function Profile9() {
+
+
+export const Profile9 = () => {
   return (
     <div className="pro7-container">
     <div className="pro7-main">
@@ -16,5 +18,3 @@ function Profile9() {
   </div>
   )
 }
-
-export default Profile9

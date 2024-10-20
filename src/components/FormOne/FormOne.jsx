@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./FormOne.css";
-const FormOne = () => {
+
+export const FormOne = () => {
   const navigate = useNavigate()
   return (
     <div className="name-container">
@@ -60,7 +61,6 @@ const FormOne = () => {
         </div> */}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FormOne;

@@ -2,10 +2,10 @@ import { useNavigate } from 'react-router-dom'
 import { figma } from '../../assets/assets'
 import './FormTwo.css'
 
-function FormTwo() {
+
+export const FormTwo = () => {
 
     const navigate = useNavigate()
-
 
   return (
     <div className="f2-main">
@@ -83,5 +83,3 @@ function FormTwo() {
     </div>
   )
 }
-
-export default FormTwo

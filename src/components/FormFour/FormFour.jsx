@@ -1,6 +1,6 @@
 import './FormFour.css'
 
-function FormFour() {
+export const FormFour = () => {
   return (
     <div className="f4-main">
       <div className="f4-container">
@@ -22,4 +22,3 @@ function FormFour() {
   )
 }
 
-export default FormFour

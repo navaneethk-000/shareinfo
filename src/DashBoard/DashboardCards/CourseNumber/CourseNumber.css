@@ -1,0 +1,21 @@
+.coursecard-main{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+    height: 30px;
+    width: fit-content;
+    background: #23262B;
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    border-radius: 7px;
+}
+
+.coursecard-main img{
+    width: 20px;
+    height: 20px;
+}
+.coursecard-main p{
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 5px;
+}

@@ -3,4 +3,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: nunito;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }

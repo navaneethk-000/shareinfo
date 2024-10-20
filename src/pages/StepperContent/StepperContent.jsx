@@ -1,8 +1,12 @@
 import { useState } from "react";
 import './StepperContent.css'
 import { useNavigate } from "react-router-dom";
-const StepperContent = ({ stepsConfig = [] }) => {
-    const navigate = useNavigate()
+import './StepperContent.css'
+
+
+export const StepperContent = ({ stepsConfig = [] }) => {
+
+  const navigate = useNavigate()
     const [currentStep, setCurrentStep] = useState(1)
     const [isComplete, setIsComplete] = useState(false)
   if (!stepsConfig.length) {
@@ -33,12 +37,12 @@ const StepperContent = ({ stepsConfig = [] }) => {
 
   const ActiveComponent = stepsConfig[currentStep-1].Component;
   const TitleComponent = stepsConfig[currentStep-1].Components;
-
+  
   return (
     <>
-    <TitleComponent/> 
-      <div className="stepper">
-        {stepsConfig.map((step, index) => {
+     <TitleComponent/> 
+       <div className="stepper">
+         {stepsConfig.map((step, index) => {
           return (
             
             <div key={step.title} className={`step ${currentStep>index+1 || isComplete?"complete":""}
@@ -73,7 +77,5 @@ const StepperContent = ({ stepsConfig = [] }) => {
 
       }
     </>
-  );  
-};
-
-export default StepperContent;
+  )
+}

@@ -1,25 +1,15 @@
-/* .pro7-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    
-} */
 .stepper-page-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .pro7-main{
     width: 1006px;
     height: 607.54px;
     display: flex;
-    
-    /* align-items: center;
-    justify-content: center; */
     justify-content: center;
-    
 }
 .step-indicator{
     display: flex;
@@ -31,7 +21,6 @@
     height: 48.54px;
     gap: 0px;
     width: 158px;
-
 }
 .step-indicator h1{
     color: #414ECA;

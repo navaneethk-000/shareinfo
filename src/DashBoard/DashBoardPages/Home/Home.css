@@ -1,0 +1,13 @@
+.navbar-div{
+    width: 100%;
+   
+}
+.sticky{
+    position: fixed;
+}
+#outlet{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
+}
