@@ -5,8 +5,12 @@ import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArro
 import { courseIcon } from "../../../assets/assets";
 import { Modulelist } from "../../DashboardCards/Modulelist/Modulelist";
 import { PlusIcon } from "@radix-ui/react-icons";
+import { useNavigate } from "react-router-dom";
 
 export const CourseModulesList = () => {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="flex flex-col gap-2 bordershadow mb-2">
@@ -17,7 +21,7 @@ export const CourseModulesList = () => {
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />
-            <Text className="font-bold">Create New Course</Text>
+            <Text className="font-bold" onClick={()=>navigate(-1)}>Create New Course</Text>
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />

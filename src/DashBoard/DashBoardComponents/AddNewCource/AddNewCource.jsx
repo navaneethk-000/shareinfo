@@ -114,7 +114,7 @@ export const AddNewCource = () => {
         </div>
       </div>
       <div className="rounded-[10px] mt-4 mb-2  ">
-        <Button onClick={()=>navigate('/Home/addnewcourse/coursemoduleslist')} className="w-{159px] h-[36px] bg-[#414ECA]">Create & Next</Button>
+        <Button onClick={()=>navigate('/Home/coursemoduleslist')} className="w-{159px] h-[36px] bg-[#414ECA]">Create & Next</Button>
       </div>
      
     </div>
