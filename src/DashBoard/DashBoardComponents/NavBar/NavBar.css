@@ -21,4 +21,12 @@
 }
 .apply-btn{
     font-family: nunito;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    /* ShareInfo Effects/ShareInfo Effect White */
+    background: var(--ShareInfo-Colors-Lighten-BG, #23262B);
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
 }

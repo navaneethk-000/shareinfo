@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bordershadow{
+  border-radius: 10px;
+  /* ShareInfo Effects/ShareInfo Effect White */
+  box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+  padding: 10px 20px;
+}
 
 *{
   padding: 0;

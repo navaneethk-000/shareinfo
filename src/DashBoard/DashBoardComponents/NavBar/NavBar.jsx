@@ -9,7 +9,7 @@ export const NavBar = () => {
   return (
     <div className="navbar-main">
     <div className="navbar-one">
-      <Flex gap={"4"} className="navbar-container">
+      <Flex gap={"4"} className="ml-4 navbar-container">
         <div className="nav-item">
           <img src={highlight_mouse_cursor} alt="img" />
           <Text>ShareInfo for Trainers</Text>
@@ -22,7 +22,7 @@ export const NavBar = () => {
     </div>
     <Separator size="4" />
     <div className="navbar-one">
-      <Flex gap={"4"} className="navbar-container">
+      <Flex gap={"4"} className="ml-4 navbar-container">
         <div className="nav-item">
           <img src={action_key_icon} alt="img" />
           <Text>Home</Text>
@@ -37,9 +37,12 @@ export const NavBar = () => {
         </div>
       </Flex>
       <Flex gap={"5"}>
-        <Button onClick={()=>navigate('/Home/addnewcourse')} className="apply-btn" color="gray" variant="surface" highContrast >
+        {/* <Button onClick={()=>navigate('/Home/addnewcourse')} className="apply-btn" color="gray" variant="surface" highContrast >
           <PlusIcon color="green" /> Add New Course
-        </Button>
+        </Button> */}
+        <button className="apply-btn flex gap-3" onClick={()=>navigate('/Home/addnewcourse')}>
+          <PlusIcon className="text-green-600" /> Add New Course
+        </button>
             <img src={action_key_gray} alt="" />
             <img src={notunrd} alt="" />       
       </Flex>

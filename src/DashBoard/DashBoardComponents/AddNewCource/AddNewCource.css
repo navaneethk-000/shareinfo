@@ -1,0 +1,9 @@
+#paddingbtn{
+    padding-right: 5px;
+    border-radius: 7px;
+    background: #23262B;    
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+}
+#domainlisted{
+    width: fit-content  ;
+}
