@@ -68,7 +68,7 @@ export const StepperContent = ({ stepsConfig = [] }) => {
        {!isComplete &&
       <div className="page-nav">
         <button onClick={handlePrev} id="previous-btn">{currentStep===stepsConfig.length?"Need Changes":"Previous"}</button>
-        <button onClick={handleNext} >{currentStep===stepsConfig.length?"Confirm & Submit": "Next"}</button>
+        <button onClick={handleNext} id="next-btn" >{currentStep===stepsConfig.length?"Confirm & Submit": "Next"}</button>
       </div>
       }
       {

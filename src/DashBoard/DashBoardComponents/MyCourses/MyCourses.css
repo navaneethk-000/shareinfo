@@ -11,3 +11,8 @@
 #course-number{
     width: 120px;
 }
+#my-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

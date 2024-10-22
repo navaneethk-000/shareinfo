@@ -1,7 +1,9 @@
-import {  ImageIcon } from "@radix-ui/react-icons";
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import HomeIcon from '@mui/icons-material/Home';
 import SettingsIcon from '@mui/icons-material/Settings';
+import MeetingRoomIcon from '@mui/icons-material/MeetingRoom';
+import LogoutIcon from '@mui/icons-material/Logout';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 
 export const sidebarData = [
     {
@@ -21,22 +23,22 @@ export const sidebarData = [
     },
     {
         name : 'naviconfour',
-        icon : <ImageIcon stroke="1.3"/>,
-        link : ''
+        icon : <MeetingRoomIcon/>,
+        link : ['mycontainer']
     },
     {
         name : 'naviconfive',
-        icon : <ImageIcon stroke="1.3"/>,
+        icon : <SettingsIcon fontSize=""/>,
         link : ''
     },
     {
         name : 'naviconsix',
-        icon : <ImageIcon stroke="1.3"/>,
+        icon : <LogoutIcon/>,
         link : ''
     },
     {
         name : 'naviconseven',
-        icon : <ImageIcon stroke="1.3"/>,
+        icon : <PeopleAltIcon/>,
         link : ''
     },
 ]

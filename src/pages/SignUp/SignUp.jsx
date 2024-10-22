@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { signUpTitle } from "../../assets/assets";
 import "./SignUp.css";
 import { useState } from "react";
@@ -51,7 +50,7 @@ export const SignUp = () => {
             <input
               type="email"
               name=""
-              id=""
+              className="input-shadow"
               placeholder="Enter Your E-Mail here!"
             />
           </div>
@@ -62,7 +61,7 @@ export const SignUp = () => {
               name=""
               value={phoneNumber}
               onChange={handlePhoneNumber}
-              id=""
+              className="input-shadow"
               placeholder="Enter Your Mobile Number here!"
             />
           </div>

@@ -2,8 +2,10 @@ import { Button, Flex, Separator, Text } from "@radix-ui/themes"
 import { action_key_gray, action_key_icon, highlight_mouse_cursor, keyboard_double_arrow_right, notunrd, starIcon } from "../../../assets/assets"
 import { PlusIcon } from "@radix-ui/react-icons"
 import './NavBar.css'
+import { useNavigate } from "react-router-dom"
 
 export const NavBar = () => {
+  const navigate = useNavigate()
   return (
     <div className="navbar-main">
     <div className="navbar-one">
@@ -35,7 +37,7 @@ export const NavBar = () => {
         </div>
       </Flex>
       <Flex gap={"5"}>
-        <Button className="apply-btn" color="gray" variant="surface" highContrast >
+        <Button onClick={()=>navigate('/Home/addnewcourse')} className="apply-btn" color="gray" variant="surface" highContrast >
           <PlusIcon color="green" /> Add New Course
         </Button>
             <img src={action_key_gray} alt="" />
