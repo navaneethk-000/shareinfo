@@ -6,7 +6,13 @@ import { ExpandBtn } from "../ExpandBtn/ExpandBtn";
 import LinkIcon from "@mui/icons-material/Link";
 import { courseIcon } from "../../../assets/assets";
 import { UploadIcon } from "@radix-ui/react-icons";
+import { useNavigate } from "react-router-dom";
+
+
 export const AddNewCource = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="flex flex-col gap-2 bordershadow mb-2">
       <div className="flex gap-6 items-center">
@@ -108,7 +114,7 @@ export const AddNewCource = () => {
         </div>
       </div>
       <div className="rounded-[10px] mt-4 mb-2  ">
-        <Button className="w-{159px] h-[36px] bg-[#414ECA]">Create & Next</Button>
+        <Button onClick={()=>navigate('/Home/addnewcourse/coursemoduleslist')} className="w-{159px] h-[36px] bg-[#414ECA]">Create & Next</Button>
       </div>
      
     </div>

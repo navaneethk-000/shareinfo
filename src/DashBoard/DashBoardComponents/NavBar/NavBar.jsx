@@ -1,4 +1,4 @@
-import { Button, Flex, Separator, Text } from "@radix-ui/themes"
+import { Flex, Separator, Text } from "@radix-ui/themes"
 import { action_key_gray, action_key_icon, highlight_mouse_cursor, keyboard_double_arrow_right, notunrd, starIcon } from "../../../assets/assets"
 import { PlusIcon } from "@radix-ui/react-icons"
 import './NavBar.css'

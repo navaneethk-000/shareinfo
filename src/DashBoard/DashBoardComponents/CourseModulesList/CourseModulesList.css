@@ -1,0 +1,10 @@
+#addnewbtn{
+    width: 164px;
+    height: 40px;
+    border-radius: 7px;
+    padding: 10px;
+    border-radius: 7px;
+    /* ShareInfo Effects/ShareInfo Effect White */
+    box-shadow: 0px 0px 4px 0px rgba(255, 255, 255, 0.25) inset;
+    background: #23262B;
+}
