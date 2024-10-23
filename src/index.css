@@ -16,6 +16,12 @@
   font-family: nunito;
   font-size: 12px;
 }
+button{
+  cursor: pointer;
+}
+.btn{
+  cursor: pointer;
+}
 
 ::-webkit-scrollbar{
   display: none;

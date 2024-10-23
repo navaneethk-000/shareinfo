@@ -21,11 +21,11 @@ export const CourseModulesList = () => {
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />
-            <Text className="font-bold" onClick={()=>navigate(-1)}>Create New Course</Text>
+            <Text className="btn font-bold">Create New Course</Text>
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />
-            <Text className="font-bold">Modules & Lessons</Text>
+            <Text className="font-bold"onClick={()=>navigate(-1)}>Modules & Lessons</Text>
           </div>
         </div>
         <div className="flex gap-3 mt-4">
@@ -54,7 +54,7 @@ export const CourseModulesList = () => {
         </div>
       </div>
       <div className="rounded-[10px] mt-4 mb-2  ">
-        <Button className="w-{159px] h-[36px] bg-[#414ECA]">
+        <Button onClick={()=>navigate("/Home/AddLessonsSelectModule")} className="w-{159px] h-[36px] bg-[#414ECA]">
           Create & Next
         </Button>
       </div>

@@ -10,6 +10,8 @@ import { MyDomain } from "../DashBoard/DashBoardComponents/MyDomain/MyDomain";
 import { MyCourses } from "../DashBoard/DashBoardComponents/MyCourses/MyCourses";
 import { AddNewCource } from "../DashBoard/DashBoardComponents/AddNewCource/AddNewCource";
 import { CourseModulesList } from "../DashBoard/DashBoardComponents/CourseModulesList/CourseModulesList";
+import { AddLessonsSelectModule } from "../DashBoard/DashBoardComponents/AddLessonsSelectModule/AddLessonsSelectModule";
+import { LessonSelectedModule } from "../DashBoard/DashBoardComponents/LessonSelectedModule/LessonSelectedModule";
 
 export const router = createBrowserRouter([
   {
@@ -61,7 +63,15 @@ export const router = createBrowserRouter([
       {
         path:"coursemoduleslist",
         element:<CourseModulesList/>,
-      }
+      },
+      {
+        path:"AddLessonsSelectModule",
+        element:<AddLessonsSelectModule/>,
+      },
+      {
+        path:"LessonSelectedModule",
+        element:<LessonSelectedModule/>,
+      },
     ],
   },
 ]);
