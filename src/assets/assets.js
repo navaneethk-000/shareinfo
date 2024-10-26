@@ -14,6 +14,7 @@ import atr from './atr.svg'
 import see_all from './see_all.svg'
 import courseIcon from './course_icon.svg'
 import aspirantNumberIcon from './diversity_icon.svg'
+import deployed from './deployed_code_alert.svg'
 
 
 export {splash_gif, 
@@ -32,4 +33,5 @@ export {splash_gif,
         see_all,
         courseIcon,
         aspirantNumberIcon,
+        deployed,
 }

@@ -98,7 +98,7 @@ export const AddNewCource = () => {
           </div>
           <div className="bordershadow flex gap-2 w-fit">
             <UploadIcon className="text-[#414ECA]" />
-            <Text className="text-[#8B8B8B]">Software Name</Text>
+            <Text className="text-[#8B8B8B]">Icon Upload</Text>
           </div>
         </div>
         <Separator size={"4"} orientation={"vertical"}/>
@@ -109,7 +109,7 @@ export const AddNewCource = () => {
           </div>
           <div className="bordershadow flex gap-2 w-fit">
             <UploadIcon className="text-[#414ECA]" />
-            <Text className="text-[#8B8B8B]">Software Name</Text>
+            <Text className="text-[#8B8B8B]">Icon Upload</Text>
           </div>
         </div>
       </div>

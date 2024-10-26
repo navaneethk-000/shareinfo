@@ -12,6 +12,9 @@ import { AddNewCource } from "../DashBoard/DashBoardComponents/AddNewCource/AddN
 import { CourseModulesList } from "../DashBoard/DashBoardComponents/CourseModulesList/CourseModulesList";
 import { AddLessonsSelectModule } from "../DashBoard/DashBoardComponents/AddLessonsSelectModule/AddLessonsSelectModule";
 import { LessonSelectedModule } from "../DashBoard/DashBoardComponents/LessonSelectedModule/LessonSelectedModule";
+import { AssesmentOnLesson } from "../DashBoard/DashBoardComponents/AssesmentOnLesson/AssesmentOnLesson";
+import { LessonsWithAssessment } from "../DashBoard/DashBoardComponents/LessonsWithAssessment/LessonsWithAssessment";
+import { AuthenticationPopup } from "../DashBoard/DashboardCards/AuthenticationPopup/AuthenticationPopup";
 
 export const router = createBrowserRouter([
   {
@@ -72,6 +75,18 @@ export const router = createBrowserRouter([
         path:"LessonSelectedModule",
         element:<LessonSelectedModule/>,
       },
+      {
+        path:"AssesmentOnLesson",
+        element:<AssesmentOnLesson/>,
+      },
+      {
+        path:"LessonsWithAssessment",
+        element:<LessonsWithAssessment/>,
+      },
+      // {
+      //   path:"AuthenticationPopup",
+      //   element:<AuthenticationPopup/>,
+      // },
     ],
   },
 ]);

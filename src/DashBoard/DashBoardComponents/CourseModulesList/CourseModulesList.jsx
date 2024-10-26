@@ -21,11 +21,11 @@ export const CourseModulesList = () => {
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />
-            <Text className="btn font-bold">Create New Course</Text>
+            <Text className="btn font-bold"onClick={()=>navigate(-1)}>Create New Course</Text>
           </div>
           <div className="bordershadow bg-[#23262B] flex gap-2 ">
             <KeyboardDoubleArrowRightIcon className="text-[#414ECA]" />
-            <Text className="font-bold"onClick={()=>navigate(-1)}>Modules & Lessons</Text>
+            <Text className="btn font-bold"onClick={()=>navigate(-1)}>Modules & Lessons</Text>
           </div>
         </div>
         <div className="flex gap-3 mt-4">
@@ -58,6 +58,7 @@ export const CourseModulesList = () => {
           Create & Next
         </Button>
       </div>
+      
     </>
   );
 };
