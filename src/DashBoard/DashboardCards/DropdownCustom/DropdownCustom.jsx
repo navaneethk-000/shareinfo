@@ -1,49 +1,50 @@
-import React from 'react'
-import './DropdownCustom.css'
+import { useState } from "react";
+import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
+import { FileTextIcon } from "@radix-ui/react-icons";
+
 export const DropdownCustom = () => {
+  const options = [
+    { label: "Video", icon: <VideoLibraryIcon className="text-[#077BD8]" /> },
+    { label: "Document", icon: <FileTextIcon className="text-[#F31919]" /> },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(options[0]);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+
   return (
-    <divj className="dropdown">
-      <button className="dropdown-toggle">
-        <span className="dropdown-toggle-label">Select option</span>
-        <span className="dropdown-toggle-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="w-4 h-4"
-          >
-            <path d="M12 10.586l4.929 4.929-4.929 4.93-4.929-4.929 4.929-4.93z" />
-          </svg>
-        </span>
+    <div className="relative inline-block items-start">
+      <button
+        onClick={toggleDropdown}
+        className="bordershadow w-[180px] h-[40px]  gap-4"
+      >
+       <div className="flex mr-24">
+       {selectedOption.icon}
+       {selectedOption.label}
+       </div>
       </button>
-      <ul className="dropdown-menu">
-        <li className="dropdown-item">
-          <span className="dropdown-item-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-4 h-4"
+      {isOpen && (
+        <div className="absolute left-0 z-10 bordershadow w-[180px] bg-gray-950 flex h-[38.99px]">
+          {options.map((option) => (
+            <div
+              key={option.label}
+              onClick={() => handleOptionClick(option)}
+              className="flex items-center p-2 cursor-pointer hover:bg-gray-900"
             >
-              <path d="M14 10h-4v4h4v-4zm0 10h-4v4h4v-4zm-6 0h-4v4h4v-4zm6 0h-4v4h4v-4z" />
-            </svg>
-          </span>
-          <span className="dropdown-item-label">Video</span>
-        </li>
-        <li className="dropdown-item">
-          <span className="dropdown-item-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="w-4 h-4"
-            >
-              <path d="M12 14.586l4.929 4.929-4.929 4.93-4.929-4.929 4.929-4.93z" />
-            </svg>
-          </span>
-          <span className="dropdown-item-label">Documents</span>
-        </li>
-      </ul>
+              {option.icon}
+              {option.label}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};

@@ -1,13 +1,6 @@
 import AdsClickIcon from "@mui/icons-material/AdsClick";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import {
-  
-  Dialog,
-  
-  Separator,
-  Text,
-  TextField,
-} from "@radix-ui/themes";
+import { Dialog, Separator, Text, TextField } from "@radix-ui/themes";
 import { courseIcon } from "../../../assets/assets";
 import { useNavigate } from "react-router-dom";
 import { Link1Icon } from "@radix-ui/react-icons";
@@ -17,9 +10,9 @@ import { CustomFileUpload } from "../../DashboardCards/CustomFileUpload/CustomFi
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { useState } from "react";
 import { AuthenticationPopup } from "../../DashboardCards/AuthenticationPopup/AuthenticationPopup";
+import { DropdownCustom } from "../../DashboardCards/DropdownCustom/DropdownCustom";
 
 export const LessonsWithAssessment = () => {
-  
   const [model, setModel] = useState(false);
   const toggleModal = () => {
     setModel(!model);
@@ -74,10 +67,7 @@ export const LessonsWithAssessment = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -109,10 +99,7 @@ export const LessonsWithAssessment = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -143,10 +130,7 @@ export const LessonsWithAssessment = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -178,12 +162,8 @@ export const LessonsWithAssessment = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
-
             <TextField.Root
               className="bordershadow w-[602px] h-[20px]"
               size={"3"}
