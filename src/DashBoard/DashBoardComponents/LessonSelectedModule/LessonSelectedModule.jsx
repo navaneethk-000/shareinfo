@@ -8,6 +8,7 @@ import DragIndicatorIcon from "@mui/icons-material/DragIndicator";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import { CustomFileUpload } from "../../DashboardCards/CustomFileUpload/CustomFileUpload";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import { DropdownCustom } from "../../DashboardCards/DropdownCustom/DropdownCustom";
 
 export const LessonSelectedModule = () => {
   const navigate = useNavigate();
@@ -55,15 +56,12 @@ export const LessonSelectedModule = () => {
         </div>
         <Text className="font-bold mt-3">Module Integrated Lessons</Text>
         <div className="flex flex-col mb-4">
-        <div className="flex items-end gap-[20px]">
+          <div className="flex items-end gap-[20px]">
             <DragIndicatorIcon className="text-[#414ECA]" />
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -95,10 +93,7 @@ export const LessonSelectedModule = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -129,10 +124,7 @@ export const LessonSelectedModule = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
 
             <TextField.Root
@@ -164,12 +156,8 @@ export const LessonSelectedModule = () => {
             <div className="bordershadow w-fit">01</div>
             <div className="flex flex-col">
               <p className="mb-2">Lesson Type</p>
-              <div className="bordershadow flex gap-2 w-[180px]">
-                <VideoLibraryIcon className="text-[#077BD8]" />
-                <p>Video</p>
-              </div>
+              <DropdownCustom />
             </div>
-
             <TextField.Root
               className="bordershadow w-[602px] h-[20px]"
               size={"3"}
@@ -193,7 +181,6 @@ export const LessonSelectedModule = () => {
 
             <CustomFileUpload />
           </div>
-          
         </div>
         
         <button className="w-fit p-2">+ Add More</button>
@@ -202,3 +189,4 @@ export const LessonSelectedModule = () => {
     </div>
   );
 };
+  

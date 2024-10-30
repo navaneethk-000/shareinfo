@@ -141,7 +141,7 @@ export const AssesmentOnLesson = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
       </div>
     </div>
   );

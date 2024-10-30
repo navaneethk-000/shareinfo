@@ -210,7 +210,7 @@ export const LessonsWithAssessment = () => {
               <AuthenticationPopup />
             </Dialog.Content>
           </Dialog.Root>
-        </div>
+        </div>  
       </div>
     </div>
   );

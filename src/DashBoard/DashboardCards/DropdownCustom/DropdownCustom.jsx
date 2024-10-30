@@ -26,13 +26,13 @@ export const DropdownCustom = () => {
         onClick={toggleDropdown}
         className="bordershadow w-[180px] h-[40px]  gap-4"
       >
-       <div className="flex mr-24">
+       <div className="flex gap-1 mr-24">
        {selectedOption.icon}
        {selectedOption.label}
        </div>
       </button>
       {isOpen && (
-        <div className="absolute left-0 z-10 bordershadow w-[180px] bg-gray-950 flex h-[38.99px]">
+        <div className="absolute left-0 bordershadow w-[180px] bg-gray-950 flex h-[38.99px]">
           {options.map((option) => (
             <div
               key={option.label}

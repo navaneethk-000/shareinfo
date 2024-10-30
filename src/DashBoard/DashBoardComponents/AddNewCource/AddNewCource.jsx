@@ -7,11 +7,29 @@ import LinkIcon from "@mui/icons-material/Link";
 import { courseIcon } from "../../../assets/assets";
 import { UploadIcon } from "@radix-ui/react-icons";
 import { useNavigate } from "react-router-dom";
-
+import { CustomUploadIcon } from "../../DashboardCards/CustomUploadIcon/CustomUploadIcon";
 
 export const AddNewCource = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  // const onChecked = () => {
+  //   const element = document.getElementById("checkhide");
+  //   element.style.display = "none";
+  // };
+  // const onCheckHide = () => {
+  //   const element = document.getElementById("checkhide");
+  //   element.style.display = "block";
+  // };
+  const checkboxtoggle = ()=>{
+    const element = document.getElementById("checkhide");
+    if(element.style.display === 'none'){
+      element.style.display = 'block'
+      element.style.flex = "column"
+      element.style.marginTop = "25px"
+      element.style.width = "200px"
+    } else{
+      element.style.display ='none'
+    }
+  }
 
   return (
     <div className="flex flex-col gap-2 bordershadow mb-2">
@@ -55,7 +73,7 @@ export const AddNewCource = () => {
           </div>
         </div>
 
-        <input className="bordershadow mt-2" type="file" name="" />
+        <CustomUploadIcon />
       </div>
       <div className="mt-[20px] flex flex-col gap-2 font-bold">
         <label htmlFor="text" className="text-[12px]">
@@ -79,7 +97,7 @@ export const AddNewCource = () => {
             className="w-full bg-[#141518] rounded-[10px] bordershadow bg-[#141518]"
           />
         </div>
-        <div className="mt-[20px] flex flex-col gap-2 font-bold">
+        <div id="checkhide" className="mt-[20px] flex flex-col gap-2 font-bold">
           <label htmlFor="text" className="text-[12px]">
             Actual Selling Price:
           </label>
@@ -89,23 +107,49 @@ export const AddNewCource = () => {
             className="w-full bg-[#141518] rounded-[10px] bordershadow bg-[#141518]"
           />
         </div>
+        <div className="flex items-end mt-14 bordershadow w-[325px] h-[40px] gap-4">
+          <input
+            placeholder="Enter the Price in INR."
+            type="checkbox"
+            // id="checkhide"
+            className=""
+            onChange={checkboxtoggle}
+            
+          />
+          <Text className="text-[#52514E]">
+            Makes this Course as{" "}
+            <span className="text-[#414ECA] font-bold">FREE</span> to Purchase
+          </Text>
+        </div>
       </div>
       <div className="flex gap-[10px]">
         <div className="flex gap-3">
           <div className="bordershadow flex gap-2 w-fit">
             <LinkIcon className="text-[#414ECA]" />
-            <Text className="text-[#8B8B8B]">Software Name</Text>
+            <input
+              type="text"
+              name=""
+              id=""
+              className="text-white w-[90px]"
+              placeholder="Software Name"
+            />
           </div>
           <div className="bordershadow flex gap-2 w-fit">
             <UploadIcon className="text-[#414ECA]" />
             <Text className="text-[#8B8B8B]">Icon Upload</Text>
           </div>
         </div>
-        <Separator size={"4"} orientation={"vertical"}/>
+        <Separator size={"4"} orientation={"vertical"} />
         <div className="flex gap-3">
           <div className="bordershadow flex gap-2 w-fit">
             <LinkIcon className="text-[#414ECA]" />
-            <Text className="text-[#8B8B8B]">Software Name</Text>
+            <input
+              type="text"
+              name=""
+              id=""
+              className="text-white w-[90px]"
+              placeholder="Software Name"
+            />
           </div>
           <div className="bordershadow flex gap-2 w-fit">
             <UploadIcon className="text-[#414ECA]" />
@@ -114,9 +158,13 @@ export const AddNewCource = () => {
         </div>
       </div>
       <div className="rounded-[10px] mt-4 mb-2  ">
-        <Button onClick={()=>navigate('/Home/coursemoduleslist')} className="btn w-{159px] h-[36px] bg-[#414ECA]">Create & Next</Button>
+        <Button
+          onClick={() => navigate("/Home/coursemoduleslist")}
+          className="btn w-{159px] h-[36px] bg-[#414ECA]"
+        >
+          Create & Next
+        </Button>
       </div>
-     
     </div>
   );
 };

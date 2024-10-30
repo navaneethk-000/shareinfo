@@ -15,6 +15,7 @@ import { LessonSelectedModule } from "../DashBoard/DashBoardComponents/LessonSel
 import { AssesmentOnLesson } from "../DashBoard/DashBoardComponents/AssesmentOnLesson/AssesmentOnLesson";
 import { LessonsWithAssessment } from "../DashBoard/DashBoardComponents/LessonsWithAssessment/LessonsWithAssessment";
 import { AuthenticationPopup } from "../DashBoard/DashboardCards/AuthenticationPopup/AuthenticationPopup";
+import { LessonSelectedModuleAfter } from "../DashBoard/DashBoardComponents/LessonSelectedModuleAfter/LessonSelectedModuleAfter";
 
 export const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ export const router = createBrowserRouter([
       {
         path:"LessonsWithAssessment",
         element:<LessonsWithAssessment/>,
+      },
+      {
+        path:"LessonSelectedModuleAfter",
+        element:<LessonSelectedModuleAfter/>,
       },
       // {
       //   path:"AuthenticationPopup",
